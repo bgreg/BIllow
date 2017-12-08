@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :location_homes, only: [:show]
+  # used to redirect to location/homes resource
   post "locations/get_homes", to: "locations#get_homes"
   resources :locations, only: [:index] do
     resources :homes, only: [:index]
