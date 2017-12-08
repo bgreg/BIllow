@@ -21,6 +21,10 @@
 	4) Confirm you rbenv install. Make sure this returns the following command works, it should return something like "rbenv 1.1.1"
 		
 		`rbenv -v`
+	5) Install Git
+		1) `brew install git`
+		2) verify the install worked: `git --version`
+		
 
 2) Installing Ruby
 	1) Use Rbenv to install the latest Ruby (2.4.2 as of today). This might take a few minutes
