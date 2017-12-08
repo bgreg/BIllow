@@ -47,6 +47,7 @@
 	`gem install bundler`
 	
 5) Install Postgresql
+
 	This project is using postgresql. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  All you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project is already configured to use postgres in development mode. When run it makes a little elephant icon on the menu bar you can use to make sure postgres is really running. 
 	
 6) Download this repository
