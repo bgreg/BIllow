@@ -7,11 +7,11 @@
 
 		`xcode-select --install`
 
-	2) Install Homebrew. If you run into trouble after completing steps 1-4 below,  try running `brew doctor` and following the advice it provides.
+	2) Install Homebrew. Besure to follow the onscreen instructions after each step. If you run into trouble after completing steps 1-4 below, try running `brew doctor` and following the advice it provides.
 
 		1) `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 		2)  Confirm the install worked: `brew -v`
-		2) `brew update`
+		3) `brew update`
 		3) `echo 'eval "$(rbenv init -)"' >> ~/.bash_profile`
 		4) `source ~/.bash_profile`
 
@@ -27,7 +27,8 @@
 		
 
 2) Installing Ruby
-	1) Use Rbenv to install the latest Ruby (2.4.2 as of today). This might take a few minutes
+	1) Use Rbenv to install the latest Ruby (2.4.2 as of today). This might take a few minutes.
+	
 		`rbenv install 2.4.2`
 
 	2) Tell rbenv you would like to use this version of Ruby you just installed
@@ -46,17 +47,20 @@
 		
 		`rails -v`
 		
-4) Install bundler. This will help you manage all your Rails dependancies. 
+
+4) Install Postgresql
+
+This project is using postgresql. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  All you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project is already configured to use postgres in development mode. When run it makes a little elephant icon on the menu bar you can use to make sure postgres is really running. 
+	
+5) Install bundler. This will help you manage all your Rails dependancies. 
 	
 	`gem install bundler`
 	
-5) Install Postgresql
-
-	This project is using postgresql. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  All you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project is already configured to use postgres in development mode. When run it makes a little elephant icon on the menu bar you can use to make sure postgres is really running. 
+	Sometimes a gem will install a native dependancy that will require additonal installation steps.  For example Nokogiri installs libxml, and the pg gem needs to know where postgres is. Usually the output messages will help inform you of any troubleshooting that is needed. 
 	
 6) Download this repository
 	 
-	 `git clone git@github.com:bgreg/BIllow.git`
+	 `git clone https://github.com/bgreg/BIllow.git`
 7) Navigate to the application's root directory
 	 
 	 `cd BIllow`
