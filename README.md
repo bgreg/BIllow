@@ -30,8 +30,9 @@
 	3) Confirm your installation is correct. After running the command below, expect to see "ruby 2.4.0p0 ... " in your terminal.
 		1) `ruby -v`
 3) Install Ruby on Rails
-	1) Rails is just a gem, that installs a few other dependant gems. The following is all you need to do to install of of rails. 
-		1)`gem install rails`
+	1) Rails is just a gem, that installs a few other dependant gems. The following is all you need to do to install of of rails.
+	
+		1) `gem install rails`
 		
 	2) confirm you rails install was successful
 		1) `rails -v`
