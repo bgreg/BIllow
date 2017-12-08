@@ -1,0 +1,28 @@
+<h1>Homes#index</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>street_name</th>
+      <th>building_number</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @homes.each do |home| %>
+      <tr>
+        <td>
+          <%= home.id %>
+        </td>
+        <td>
+          <%= home.street_name %>
+        </td>
+        <td>
+          <%= home.building_number %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
