@@ -49,12 +49,14 @@
 8) Install the application's dependacies
 	1) `bundle install`
 9) Ask Rails to setup it's database. This command will create databases in postgres for each environment, run migrations against development, and run the seed.rb file to add some data. 
-	1) `rails db:setup"
+	1) `rails db:setup`
 
 10) At this point you should be ready to run the Rails server. The command below will boot up puma and serve pages on localhost:3000
 	1) `rails server`
 11) Try it out! 
-	1) navigate to localhost:3000, and try to submit a location.  
+	1) navigate to localhost:3000
+	2) use the drop box to select a location, and click "submit"
+	3) you should see it load up a page that displays a list of homes for that location. 
 
 
 
