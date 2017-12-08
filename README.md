@@ -48,9 +48,15 @@
 		`rails -v`
 		
 
-4) Install Postgresql
+4) Install Postgresql. There are 2 ways to do this, I'll list both below.
 
-	This project is using postgresql. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  All you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project is already configured to use postgres in development mode. When run it makes a little elephant icon on the menu bar you can use to make sure postgres is really running. 
+	1) Use the app. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  After you have followed the install instructions from the website, all you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project should already configured to use postgres in development mode. 
+	 
+	OR 
+	 
+	2) You can use brew.  
+		1) `brew install postgresql`
+		2) Run this to see instructions on how to start server: `brew info postgresql` 
 	
 5) Install bundler. This will help you manage all your Rails dependancies. 
 	
