@@ -71,9 +71,9 @@
 	 
 	 `rails server`
 11) Try it out! 
-	1) navigate to localhost:3000
-	2) use the drop box to select a location, and click "submit"
-	3) you should see it load up a page that displays a list of homes for that location. 
+	1) Navigate to localhost:3000
+	2) Use the drop box to select a location, and click "submit"
+	3) You should see it load up a page that displays a list of homes for that location. 
 
 
 
