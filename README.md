@@ -10,6 +10,7 @@
 	2) Install Homebrew. If you run into trouble after completing steps 1-4 below,  try running `brew doctor` and following the advice it provides.
 
 		1) `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+		2)  Confirm the install worked: `brew -v`
 		2) `brew update`
 		3) `echo 'eval "$(rbenv init -)"' >> ~/.bash_profile`
 		4) `source ~/.bash_profile`
@@ -46,7 +47,7 @@
 	`gem install bundler`
 	
 5) Install Postgresql
-	1) This project is using postgresql. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  All you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project is already configured to use postgres in development mode. When run it makes a little elephant icon on the menu bar you can use to make sure postgres is really running. 
+	This project is using postgresql. In my opinion, the easiest way to install this on OSX is to use this app: https://postgresapp.com/.  All you have to do is launch the app and it starts Postgres on port 5432. The database.yml file in this project is already configured to use postgres in development mode. When run it makes a little elephant icon on the menu bar you can use to make sure postgres is really running. 
 	
 6) Download this repository
 	 
