@@ -35,7 +35,7 @@
 		
 		`rbenv global 2.4.2`
 
-	3) Confirm your installation is correct. After running the command below, expect to see "ruby 2.4.0p0 ... " in your terminal.
+	3) Confirm your installation is correct. After running the command below, expect to see output similar to: "ruby 2.4.2 ... " in your terminal.
 		
 		`ruby -v`
 3) Install Ruby on Rails
@@ -43,7 +43,7 @@
 	
 		`gem install rails`
 		
-	2) confirm you rails install was successful
+	2) Confirm you rails install was successful. Expect to see something similar too: "Rails 5.1.4"
 		
 		`rails -v`
 		
