@@ -1,6 +1,9 @@
-# Getting started on OSX 10.12.6 or higher
+
+
+# Getting started on OSX 10.12.6 or higher.  
 
 (commands you need to run will be highlighted like code)
+The instructions below will help you set up a system from scratch, and run this project in development mode. 
 
 1) Preparing your system to run Ruby
 	1) Install Xcode dev tools.  This will be used in later steps to compile Ruby.
@@ -88,3 +91,4 @@
 
 
 
+Also, this PR has a version which implements multi-select and rerenders on the same page for easy browsing. https://github.com/bgreg/BIllow/pull/1
