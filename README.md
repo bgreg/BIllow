@@ -90,5 +90,16 @@ The instructions below will help you set up a system from scratch, and run this 
 
 
 
+----
+*Alternate implementation*
 
-Also, this PR has a version which implements multi-select and rerenders on the same page for easy browsing. https://github.com/bgreg/BIllow/pull/1
+
+A simple multi-select implementation with same page rendering for easy browsing: https://github.com/bgreg/BIllow/pull/1
+
+*Future work* 
+
+
+I was considering intruducing a Search model.  When submitting the form with multiple choices, a search object could be saved.  Then the search index, for that search, would populate with your results.  This has a few benefits, aside from a simple design, it also lets us add search history so a user can go back through what they looked for in the past. 
+
+The down side here would be adding a DB write to each search call, and quickly growing storage.  Depending on how much this app is used, the 1 extra write could be neglagable.  I think limiting the amount of history we save per user for now would be an acceptable workaround for the storage issue. 
+
