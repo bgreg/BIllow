@@ -1,11 +1,10 @@
 <h1>Available Locations</h1>
-
 <% locations = @locations.map{|l| [l.name, l.id]} %>
-
-<%= form_tag locations_get_homes_path do %>
-  <%= select_tag(:location_id, options_for_select(locations)) %>
+<%= form_tag locations_path, method: :get do %>
+  <%= select_tag(:location_id, options_for_select(locations), multiple: true, size: 10, required: true) %>
   <%= submit_tag("submit") %>
 <% end  %>
 
-
-
+<% @selected_locations.each do |location| %>
+  <%= render partial: "homes/homes_for_location", locals: { location: location } %>
+<% end %>
