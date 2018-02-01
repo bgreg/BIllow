@@ -3,10 +3,8 @@
 class LocationsController < ApplicationController
   def index
     @locations = Location.all
-  end
-
-  def get_homes
-    @location = Location.find_by!(id: params[:location_id])
-    redirect_to location_homes_path(@location)
+    if params[:location_id]
+      @selected_locations = Location.find(params[:location_id])
+    end
   end
 end
