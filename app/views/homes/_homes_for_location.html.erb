@@ -1,4 +1,4 @@
-<h1>Homes for  <%= @location.name %></h1>
+<h1>Homes for  <%= location.name %></h1>
 
 <table>
   <thead>
@@ -11,7 +11,7 @@
   </thead>
 
   <tbody>
-    <% @homes.each do |home| %>
+    <% location.homes.each do |home| %>
       <tr>
         <td>
           <%= home.id %>
